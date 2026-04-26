@@ -107,7 +107,8 @@ L'analyse montre une application fonctionnelle mais encore marquee par plusieurs
 
 ## 10. Captures
 ### Connexion et lancement
-![Connexion MobSF](images/01-login-mobsf.png)
+![Connexion MobSF]<img width="956" height="781" alt="01-login-mobsf" src="https://github.com/user-attachments/assets/e4ac67b5-a5a6-47fb-9006-d0c9baa33004" />
+
 
 ![Hash SHA-256 de l'APK](images/02-hash-sha256.png)
 
