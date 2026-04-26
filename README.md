@@ -106,32 +106,46 @@ L'application presente un niveau de risque **moyen**. Le rapport MobSF met surto
 L'analyse montre une application fonctionnelle mais encore marquee par plusieurs choix techniques perfectibles du point de vue securite. Le risque principal ne tient pas a un unique defaut critique, mais a l'accumulation de mauvaises pratiques sur le chiffrement, le stockage et la compatibilite avec des plateformes anciennes. Une correction de ces points permettrait d'ameliorer sensiblement le niveau de securite global.
 
 ## 10. Captures
+
 ### Connexion et lancement
-![Connexion MobSF]<img width="956" height="781" alt="01-login-mobsf" src="https://github.com/user-attachments/assets/e4ac67b5-a5a6-47fb-9006-d0c9baa33004" />
 
+![01-login-mobsf](https://github.com/user-attachments/assets/e4ac67b5-a5a6-47fb-9006-d0c9baa33004)
+*Figure 1 - Ecran de connexion a MobSF.*
 
-![Hash SHA-256 de l'APK](images/02-hash-sha256.png)
+![02-hash-sha256](https://github.com/user-attachments/assets/d2e17657-6795-4eef-897d-25a7d870ae58)
+*Figure 2 - Calcul de l'empreinte SHA-256 de l'APK analyse.*
 
-![Analyse en cours](images/03-analyse-en-cours.png)
+![03-analyse-en-cours](https://github.com/user-attachments/assets/d7ccb8de-13c6-427f-859e-a9e66347c086)
+*Figure 3 - Lancement de l'analyse statique de l'APK dans MobSF.*
 
 ### Tableau de bord et permissions
-![Vue generale du scan](images/04-tableau-de-bord.png)
 
-![Permissions de l'application](images/05-permissions.png)
+![04-tableau-de-bord](https://github.com/user-attachments/assets/88c1fa18-e863-489b-9288-e5b95a131a19)
+*Figure 4 - Vue generale du rapport MobSF avec le score de securite et les informations principales de l'application.*
 
-![API Android detectees](images/06-android-api.png)
+![05-permissions](https://github.com/user-attachments/assets/40520918-68bf-4405-ae45-2da40f740e38)
+*Figure 5 - Liste des permissions demandees par l'application, dont plusieurs permissions sensibles.*
+
+![06-android-api](https://github.com/user-attachments/assets/13c0cb89-179b-47c6-932d-337b779d020a)
+*Figure 6 - APIs Android detectees lors de l'analyse statique.*
 
 ### Analyse securite
-![Browsable activities et network security](images/07-browsable-network.png)
 
-![Analyse du certificat](images/08-certificat.png)
+![07-browsable-network](https://github.com/user-attachments/assets/ffb52aff-79ea-4c60-8ad9-a75be3fbc969)
+*Figure 7 - Sections Browsable Activities et Network Security, sans resultat critique visible sur cette capture.*
 
-![Analyse du manifeste](images/09-manifest-analysis.png)
+![08-certificat](https://github.com/user-attachments/assets/47794a57-4e10-4fdd-88c7-ea1813efa003)
+*Figure 8 - Analyse du certificat et avertissement sur la signature v1 exposee a la vulnerabilite Janus.*
 
-![Analyse du code](images/10-code-analysis.png)
+![10-code-analysis](https://github.com/user-attachments/assets/d7e0565e-acf6-4b50-9d5c-93f26016b068)
+*Figure 9 - Resultats de l'analyse de code avec les alertes principales relevees par MobSF.*
 
-![Verification des domaines](images/11-domain-malware-check.png)
+![11-domain-malware-check](https://github.com/user-attachments/assets/d1625c07-8279-4b93-bc39-b724147edfdf)
+*Figure 10 - Verification des domaines references par l'application.*
 
-![Hardcoded secrets possibles](images/12-hardcoded-secrets.png)
+![12-hardcoded-secrets](https://github.com/user-attachments/assets/85a10eaa-fab1-4198-81f6-b9aad65a9369)
+*Figure 11 - Chaines detectees comme secrets potentiels par MobSF, a interpreter avec prudence.*
 
-![Liste des activites](images/13-activities.png)
+![13-activities](https://github.com/user-attachments/assets/321313d1-a10d-41ca-8907-99f8666c3fef)
+*Figure 12 - Liste des activites declarees dans l'application.*
+
